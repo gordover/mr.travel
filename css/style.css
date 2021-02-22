@@ -1,0 +1,231 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    overflow: hidden;
+    height: 100%;
+}
+
+.hero{
+    background:url('../img/hero-bg.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: rgba(0,0,0,0.15);
+    margin-bottom: 195px;
+}
+
+.header-content{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.header-nav-list-item{
+    margin-left: 50px;
+    position: relative;
+}
+
+
+
+.nav-link{
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.3;
+}
+
+.nav-link::after{
+    content: '';
+    width: 140%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -12px;
+    left:-20%;
+    display: none;
+}
+
+.nav-link:hover{
+    opacity: 1;
+    display: block;
+}
+
+.nav-link:hover::after{
+    display: block;
+}
+
+
+
+.header-logo{
+    font-family: "Forte MT";
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-title{
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    font-size: 48px;
+    text-align: center;
+    margin: 0 0 54px 0;
+}
+
+.form-label{
+    position: relative;
+}
+
+.search-img{
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-40%);
+}
+
+.hero-form-input{
+    outline: none;
+    border: none;
+    width:400px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 20px 60px 19px;
+    border-radius: 60px;
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    font-style: normal;
+    color: #999999;
+    letter-spacing: 0.35px;
+    font-size: 14px;
+}
+
+.hero-form-input::placeholder{
+    color: #999999;
+}
+
+.hero-form-search{
+    width: 113px;
+    height: 57px;
+    border-radius: 40px;
+    border:none;
+    outline: none;
+    position: absolute;
+    right: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f76f8d;
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    cursor: pointer;
+}
+
+.availability{
+    background-color: #fdf8f9;
+    padding-top: 57px;
+}
+
+.availability-title{
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+    margin: 0 0 45px 0;
+}
+
+.availability-form{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 76px;
+}
+
+.availability-label{
+    position: relative;
+}
+
+.availability-input{
+    padding: 19px;
+    box-sizing: border-box;
+    height: 48px;
+    width: 144px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 20px rgba(247, 111, 141, 0.15);
+    font-family: "Proxima Nova";
+    font-size: 14px;    
+    line-height: 19px;
+    letter-spacing: 0.35px;
+    color: #999999;
+}
+
+.availability-input::placeholder{
+    color: #999999;
+}
+
+.select-destination-input{
+    width: 267px;
+}
+
+.availability-input-img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.check-availability-button{
+    width: 199px;
+    height: 48px;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    color: #ffffff;
+    background-color: #fff;
+    background-color: #f76f8d;
+    box-shadow: 0 0 20px rgba(247, 111, 141, 0.15);
+    border: none;
+    outline: none;
+}

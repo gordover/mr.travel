@@ -1,0 +1,22 @@
+@font-face{
+
+    font-family: "Forte MT";
+    
+    src: url('../fonts/WebFont.eot');
+    
+    src: url('../fonts/ForteMt.ttf') format('truetype');
+    
+    font-weight: bold;
+    
+    font-style: normal;
+    
+    }
+
+
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url('./ProximaNova-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
