@@ -4,6 +4,20 @@ body{
     margin: 0;
 }
 
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
 .wrapper{
     overflow: hidden;
     height: 100%;
@@ -314,7 +328,8 @@ body{
     position: relative;
 }
 
-.availability-button{
+.purple-button{
+    line-height: 0;
     width: 250px;
     height: 50px;
     background-color: #f76f8d;
@@ -334,4 +349,288 @@ body{
     bottom: -100px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+
+.hotels-content{
+    padding-top: 136px;
+    position: relative;
+}
+
+.relaxation-title{
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333;
+    letter-spacing: 1.5px;
+}
+
+.relaxation-subtitle{
+    font-family: "Proxima Nova Lt";
+    color: #cccccc;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 0 42px;
+}
+
+.hotels{
+    padding-bottom: 83px ;
+}
+
+.hotels-filter-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 68px;
+}
+
+.hotels-filter-button{
+    background: none;
+    border: none;
+    outline: none;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    color: #cccccc;
+    font-weight: bold; 
+    cursor: pointer;
+    min-width: 200px;
+}
+
+button.active{
+    width: 200px;
+    max-width: 200px;
+    padding: 11px 0;
+    box-sizing: border-box;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    color: #f76f8d;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(247, 111, 141, 0.15);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.hotels-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 26px;
+}
+
+.hotels-list-items{
+    display: flex;
+}
+
+.hotel-img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.hotel-info-block{
+    padding: 22px 0 37px 22px;
+    font-family: "Proxima Nova";
+}
+
+.hotel-name{
+    font-size: 16px;
+    color: #666666;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hotel-slots{
+    font-family: "Proxima Nova Rg";
+    color: #999999;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 45px;
+}
+
+.hotel-price{
+    color: #f76f8d;
+    letter-spacing: 0.8px;
+}
+
+.hotels-button{
+    bottom: -107px;
+}
+
+.feedback{
+    padding: 136px 0 75px;
+    background-color: #fdf8f9;
+}
+
+.feedback-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-block-item{
+    width: 329px;
+    height: 329px;
+    box-shadow: 0 0 30px rgba(247, 111, 141, 0.1);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px 29px;
+    box-sizing: border-box;
+}
+
+.feedback-title{
+    margin: 0;
+    padding: 0 0 30px;
+    color: #f76f8d;
+    font-family: "Proxima Nova";
+    letter-spacing: 1.2px;
+    font-size: 24px;
+}
+
+.faq-list-item{
+    margin-bottom: 12px;
+}
+
+.faq-link{
+    font-family: "Proxima Nova Lt";
+    font-size: 14px;
+    font-weight: bold;
+    color: #666666;
+    text-decoration: none;
+}
+
+.feedback-text{
+    font-family: "Proxima Nova Lt";
+    color: #666666;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.feedback-form{
+    margin-top: 30px;
+    position: relative;
+}
+
+.feedback-img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 18px;
+}
+
+.feedback-input{
+    width: 100%;
+    padding: 20px 18px 18px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background-color: #f9eef1;
+    font-family: "Proxima Nova Lt";
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.16px;
+    font-weight: bold;
+}
+
+.feedback-input::placeholder{
+    font-family: "Proxima Nova Lt";
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.16px;
+    font-weight: bold;
+}
+
+.feedback-link-block{
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feddback-actions{
+    font-family: "Proxima Nova Lt";
+    font-weight: 300;
+    letter-spacing: 0.7px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #f76f8d;
+}
+
+.footer{
+    padding: 43px 0 28px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo{
+    margin-right: 104px;
+}
+
+.footer-logo-link{
+    font-family: "Forte MT";
+    color: #f76f8d;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.footer-info-block{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    margin-bottom: 34px;
+}
+
+.footer-info-title{
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    color: #f76f8d;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer-link-item{
+    font-family: "Proxima Nova Rg";
+    font-weight: 300;
+    letter-spacing: 0.35px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #666666;
+}
+
+.footer-row{
+    width: 100%;
+    height: 2px;
+    background-color: #cccccc;
+    margin-bottom: 33px;
+}
+
+.copy-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy-right-text{
+    display: flex;
+    align-items: center;
+}
+
+.copy-right-text{
+    font-family: "Proxima Nova Rg";
+    font-weight: bold;
+    color: #666666;
+    font-size: 14px;
+    margin-left: 8px;
+}
+.social-link{
+    margin-left: 8px;
+}
+
+.social-link:first-child{
+    margin-left: 0;
 }
